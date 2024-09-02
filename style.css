@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    
+
+}
+.banner{
+    
+    width: 100;
+    height: 100vh;
+    
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('home.jpg');
+    background-size: cover;
+    background-position:center ;
+
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding:  0;
+    display:flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 40px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(210, 126, 30);
+    text-transform: uppercase;
+  
+
+}
+.navbar ul li button a{
+    text-decoration: none;
+    color:rgb(210, 126, 30);
+    text-transform: uppercase;
+  
+
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width: 0;
+    background: #b39370;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    transition:0.4s;
+    
+    
+
+
+}
+.navbar ul li:hover::after{
+    width:100%;
+
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-60%);
+    color:rgb(223, 157, 96);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;;
+    
+    
+    
+
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 70px;
+}
+.content p{
+    margin:20px auto;
+    line-height: 25px;
+}
+button{
+    width: 200px;;
+    padding: 15px 0;
+    text-align: center;
+    margin:10px 20px;
+    border-radius: 25px;
+    font-weight:bold;
+    border:2px solid #c57e2e;
+    background: transparent;
+    color:rgb(128, 103, 58);
+   cursor:pointer;
+   position:relative;
+   overflow: hidden;
+    
+
+}
+span{
+    background: orange;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+    transition: 0.4s;
+
+}
+button:hover span{
+    width:100%;
+
+}
+button:hover{
+    border:none;
+}
+
